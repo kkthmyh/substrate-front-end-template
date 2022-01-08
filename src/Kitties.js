@@ -14,7 +14,7 @@ export default function Kitties(props) {
     const [status, setStatus] = useState('')
     const [DNAs, setDNAs] = useState([])
     const [owners, setOwners] = useState([])
-
+    // 获取并设置所有的DNA和owners
     const fetchKitties = () => {
         let unsub = null;
         const asyncFetch = async () => {
